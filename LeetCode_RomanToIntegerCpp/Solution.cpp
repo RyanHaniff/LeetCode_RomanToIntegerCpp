@@ -21,14 +21,14 @@ int Solution::romanToInt(std::string s) {
     for (int i = s.length() - 2; i>= 0; --i) {
 
         if (map[s[i]] < map[s[i + 1]]) {
-            std::cout << map[s[i]] << " < " << map[s[i + 1]] << "/n";
+            std::cout << map[s[i]] << " < " << map[s[i + 1]] << "\n";
             addFromBack = addFromBack - map[s[i]];
-            std::cout << addFromBack << "/n";
+            std::cout << addFromBack << "\n";
         }
         else {
             std::cout << map[s[i]];
             addFromBack = addFromBack + map[s[i]];
-            std::cout << addFromBack << "/n";
+            std::cout << addFromBack << "\n";
         }
     }
 
